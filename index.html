@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Do You Want To Play A Game?</h1>
+    <h2>Below is a set of questions you must answe correctly or else...to get to the next question you must answer correctly..every answer you get wrong the timer reduces by 10 seconds..if the timer hits zero before all the questions are answered it is GAME OVER! Good Luck, Play smart</h2>
+    <!-- Button to start the quiz -->
+    <button id="start-btn">Start Quiz</button>
+    <!-- Container for questions -->
+    <div id="question-container" style="display: none;"><!--working to get the questions to pop up!-->
+        <p id="question"></p>
+        <!-- Answer choice buttons will be dynamically added here -->
+    </div>
+    <!-- Container for result and option to save score -->
+    <div id="result-container" style="display: none;">
+        <p id="result"></p>
+        <button id="save-score-btn" onclick="saveScore()">Save Score</button>
+    </div>
+    <!-- Display the timer -->
+    <div id="timer">Time: <span id="time">60</span> seconds</div>
+</div>
+
+<script src="./assets/script.js"></script>
+</body>
+</html>
