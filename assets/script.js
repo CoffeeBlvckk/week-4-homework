@@ -1,4 +1,4 @@
-// Sample questions and answers
+// Sample questions and answers. grouped by object/arrays. got help with this from stack over flow dont forget to site
 const questions = [
   {
       question: "What is the capital of France?",
@@ -30,7 +30,6 @@ const questions = [
       answers: ["Mars", "Jupiter", "Venus", "Saturn"],
       correctAnswer: "Jupiter"
   }
-  // Add more questions as needed
 ];
 
 // Variables to track quiz state
@@ -65,8 +64,9 @@ function showQuestion() {
   // Retrieve current question
   const currentQuestion = questions[currentQuestionIndex];
   // Display question text
-  questionElement.textContent = currentQuestion.question;
-
+  //ask for help
+  var testArray = Object.values(currentQuestion);//help from vinny. hopefully this works
+  questionElement.textContent = testArray[0];//help from vinny,Z.
   //create answer choice buttons
   const answerContainer = document.getElementById("question-container");
   answerContainer.innerHTML = "";
@@ -105,13 +105,13 @@ function checkAnswer(selectedButton) {
 }
 
 function showResult(message) {
-  // Show container with the appropriate message
+  // Show container with message
   resultContainer.style.display = "block";
   resultContainer.innerHTML = `<p>${message}</p>`;
 }
 
 function startTimer() {
-  // Set up the timer interval to decrement time every second
+  // Set up the timer to take away time every second
   timerInterval = setInterval(() => {
       timeLeft--;
       timeElement.textContent = timeLeft;
@@ -129,6 +129,7 @@ function endQuiz() {
   // Hide the question container
   questionContainer.style.display = "none";
   // Show the save score button
+  //button not showing up...circle back
   saveScoreButton.style.display = "block";
 }
 

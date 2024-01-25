@@ -33,25 +33,27 @@ body{
     color: black;
 }
 
-#question-container{
+/*#question-container{
     color: red;
-    display: contents; /*still having trouble getting questions to show up. CIRCLE BACK TO THIS CODE.*/
-}
+    display: contents; /*still having trouble getting questions to show up, try targeting the question container. CIRCLE BACK TO THIS CODE.
+}*/
 
-h2{
+h2{ /*added this to add some space between the top and bottom for this section.*/
     padding-top: 250px;
     padding-bottom: 250px;
 }
 
 footer{
-    text-align: center;
+    text-align: center; /*centered footer text*/
+    padding-top: 100px;
 }
 
 #save-score-btn{
     background-color: red;
     color: black;
 }
-#question{ /*tried uding this to target the questions*/
+
+#question{ /*tried uding this code to target the questions to get them to appear. did not work*/
     color: red;
     font-family: cursive;
     font-size: small;

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css"><!--linked css-->
+    <title>Code Quiz</title> <!--title-->
 </head>
 <body>
 
@@ -14,11 +14,11 @@
     <!-- Button to start the quiz -->
     <button id="start-btn">Start Quiz</button>
     <!-- Container for questions -->
-    <div id="question-container" style="display: question;"><!--working to get the questions to pop up!-->
+    <div id="question-container" style="display: none;"> <!--working to get the questions to pop up!-->
         <p id="question"></p>
         <!-- Answer choice buttons will be added here -->
     </div>
-    <!-- Container for viewing and saving score -->
+    <!-- Container for viewing/saving score -->
     <div id="result-container" style="display: none;">
         <p id="result"></p>
         <button id="save-score-btn" onclick="saveScore()">Save Score</button><!--need score keeper to show up circle back!-->
@@ -28,9 +28,9 @@
 </div>
 
 <footer>
-  <h3>GAME OVER</h3>
+  <h3>GAME OVER!</h3><!--make appear appon failing the game ( 3 or more wrong)-->
 </footer>
 
-<script src="./assets/script.js"></script>
+<script src="./assets/script.js"></script><!--linked javascript to html-->
 </body>
 </html>
