@@ -21,7 +21,7 @@
 body{
     background-image: url(./mini\ project\ example.webp);
     height: 2000px;
-    width: auto;
+    width: auto;/**/
     flex-wrap: wrap;
     color: red;
     padding-left: 200px;/*even though everything was centered i needede padding to get the text to not be layered pver the image i was useing*/
@@ -53,7 +53,7 @@ footer{
     color: black;
 }
 
-#question{ /*tried uding this code to target the questions to get them to appear. did not work*/
+#question{ /*tried using this code to target the questions to get them to appear. did not work as far as getting the questions to appear over all vs how they are going to look.*/
     color: red;
     font-family: cursive;
     font-size: small;
