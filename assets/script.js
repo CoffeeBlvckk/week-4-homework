@@ -90,7 +90,7 @@ function checkAnswer(selectedButton) {
   // Show the result for a brief moment
   showResult("Next Question");
 
-  // Move to the next question or end the quiz
+  // Move to the next question or end the quiz. still need to add "attempt to quit BUTTON. circle back"
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
       // If there are more questions, move to the next one after a delay
