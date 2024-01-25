@@ -62,12 +62,12 @@ function startQuiz() {
 }
 
 function showQuestion() {
-  // Retrieve the current question
+  // Retrieve current question
   const currentQuestion = questions[currentQuestionIndex];
-  // Display the question text
+  // Display question text
   questionElement.textContent = currentQuestion.question;
 
-  // Dynamically create answer choice buttons
+  //create answer choice buttons
   const answerContainer = document.getElementById("question-container");
   answerContainer.innerHTML = "";
   currentQuestion.answers.forEach((answer, index) => {
@@ -105,7 +105,7 @@ function checkAnswer(selectedButton) {
 }
 
 function showResult(message) {
-  // Show the result container with the appropriate message
+  // Show container with the appropriate message
   resultContainer.style.display = "block";
   resultContainer.innerHTML = `<p>${message}</p>`;
 }
@@ -138,3 +138,4 @@ function saveScore() {
   // Save initials and score logic goes here (this is just an alert for now)
   alert(`Score saved for ${initials}!`);
 }
+

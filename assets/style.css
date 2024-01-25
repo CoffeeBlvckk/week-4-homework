@@ -35,10 +35,24 @@ body{
 
 #question-container{
     color: red;
-    text-size-adjust: 250px;
+    display: contents; /*still having trouble getting questions to show up. CIRCLE BACK TO THIS CODE.*/
 }
 
 h2{
     padding-top: 250px;
     padding-bottom: 250px;
+}
+
+footer{
+    text-align: center;
+}
+
+#save-score-btn{
+    background-color: red;
+    color: black;
+}
+#question{ /*tried uding this to target the questions*/
+    color: red;
+    font-family: cursive;
+    font-size: small;
 }
