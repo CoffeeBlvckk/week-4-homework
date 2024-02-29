@@ -86,7 +86,9 @@ function checkAnswer(selectedButton) {
   const currentQuestion = questions[currentQuestionIndex];
   // Get the user's selected answer
   const userAnswer = selectedButton.textContent;
-
+  if (userAnswer!= currentQuestion.correctAnswer){
+    timeLeft -=10
+  }
   // Show the result for a brief moment
   showResult("Next Question");
 
@@ -107,7 +109,7 @@ function checkAnswer(selectedButton) {
 function showResult(message) {
   // Show container with message
   resultContainer.style.display = "block";
-  resultContainer.innerHTML = `<p>${message}</p>`;
+  resultContainer.innerHTML = `<p>${message}</p>`;//target here tp get the local storage to work ..inner html i wiping whats needing to happen
 }
 
 function startTimer() {
@@ -124,6 +126,8 @@ function startTimer() {
 }
 
 function endQuiz() {
+  resultContainer.style.display= "block"
+  JSON.stringify
   // Clear the timer interval
   clearInterval(timerInterval);
   // Hide the question container
